@@ -1,21 +1,29 @@
 img{
   max-width: 320px;
-  padding: 5px;
+  padding: 15px;
 }
 .title{
-  margin-left: 7.5em;
+  margin-left: 6.5em;
+  padding: 10px;
 }
 .food{
-  max-width: 400;
+  max-width: 450;
   float: left;
-  margin: 10px 20px auto;
+  margin: 20px 20px 20px 20px;
 }
 .price{
-  margin-left: 9.5em;
+  margin-left: 9em;
+  padding: 1em;
+  justify-content: center;
 }
 .buy{
-  margin-left: 10.3em;
+  margin-left: 8.5em;
+  padding: 1em;
+  justify-content: center;
 }
 .button{
   min-width: 10em;
+}
+.container{
+  margin-left: 30px;
 }
