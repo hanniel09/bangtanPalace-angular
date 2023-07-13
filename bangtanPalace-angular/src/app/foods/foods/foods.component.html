@@ -1,6 +1,24 @@
 <mat-card>
   <mat-card-header>
-    <mat-toolbar color="accent">Menu</mat-toolbar>
+    <mat-toolbar color="accent">Menu
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" class="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>add</mat-icon>
+          <span>New food</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          <span>Delete food</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>edit</mat-icon>
+          <span>Edit food</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar>
   </mat-card-header>
   <div class="container text-center">
     <div class="row">
