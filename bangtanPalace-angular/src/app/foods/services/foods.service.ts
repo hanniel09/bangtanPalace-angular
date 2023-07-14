@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Food } from '../model/food';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodsService {
 
-  constructor() { }
+  constructor() {
+     /*empty*/
+}
 
   list(){
     return [{ _id: '1',

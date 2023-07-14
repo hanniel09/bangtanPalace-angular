@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { FoodsRoutingModule } from './foods-routing.module';
 import { FoodsComponent } from './foods/foods.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
+import { FoodsFormComponent } from './foods-form/foods-form.component';
 
 @NgModule({
   declarations: [
-    FoodsComponent
+    FoodsComponent,
+    FoodsFormComponent
   ],
   imports: [
     CommonModule,
