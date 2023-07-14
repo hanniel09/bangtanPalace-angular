@@ -23,14 +23,14 @@
   <mat-grid-list cols="5" rowHeight="500">
     <mat-grid-tile>
       <mat-card class="food">
-        <mat-card-title class="title">
-          Sushi
+        <mat-card-title class="title" *ngFor="let food of foods">
+          {{ food.title }}
         </mat-card-title>
-        <img mat-card-image
-        src="https://classic.exame.com/wp-content/uploads/2017/05/sushi.jpg?quality=70&strip=info&w=1024"
+        <img mat-card-image *ngFor="let food of foods"
+        src="{{ food.image }}"
         alt="sushi image">
-        <mat-card-content class="price">
-          39,99R$
+        <mat-card-content class="price" *ngFor="let food of foods">
+          {{ food.price }}R$
         </mat-card-content>
         <mat-card-footer class="buy">
           <button mat-raised-button color="primary">Buy</button>
