@@ -5,6 +5,7 @@ import { FoodsRoutingModule } from './foods-routing.module';
 import { FoodsComponent } from './foods/foods.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { FoodsFormComponent } from './foods-form/foods-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FoodsFormComponent } from './foods-form/foods-form.component';
   imports: [
     CommonModule,
     FoodsRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class FoodsModule { }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, NonNullableFormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FoodsService } from '../services/foods.service';
 import { Location } from '@angular/common';
@@ -16,7 +16,7 @@ export class FoodsFormComponent implements OnInit {
   form!: FormGroup;
 
   constructor(private service:FoodsService,
-    private formBuilder: NonNullableFormBuilder,
+    private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
     private location: Location,
     private route: ActivatedRoute
