@@ -8,7 +8,7 @@ import { first } from 'rxjs';
 })
 export class FoodsService {
 
-  private readonly API = 'cardapio';
+  private readonly API = 'assents/foods.json';
 
   constructor(private httpClient: HttpClient) {
      /*empty*/
@@ -17,15 +17,15 @@ export class FoodsService {
   loadById(id: string){
     return this.httpClient.get<Food>(`${this.API}/${id}`);
   }
-  
+
 
   list(){
-    return [{ _id: '1',
-     title: "Sushi",
-     image: 'https://classic.exame.com/wp-content/uploads/2017/05/sushi.jpg?quality=70&strip=info&w=1024',
-     price: "39,99"
-      }
-    ];
+    return  [{ _id: '1',
+    title: "Sushi",
+    image: 'https://classic.exame.com/wp-content/uploads/2017/05/sushi.jpg?quality=70&strip=info&w=1024',
+    price: "39,99"
+     }
+   ];
   }
 
   save(record: Partial<Food>){

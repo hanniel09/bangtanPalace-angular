@@ -2,6 +2,7 @@ import { FoodsService } from './../services/foods.service';
 import { Component, OnInit } from '@angular/core';
 import { Food } from '../model/food';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-foods',
