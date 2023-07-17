@@ -17,3 +17,9 @@ mat-card {
 .right-align{
   text-align: right;
 }
+mat-card-actions{
+  justify-content: center;
+}
+mat-card-actions button{
+  margin: 5px;
+}

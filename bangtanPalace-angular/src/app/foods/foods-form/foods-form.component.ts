@@ -15,7 +15,7 @@ export class FoodsFormComponent implements OnInit {
 
   form!: FormGroup;
 
-  constructor(private service:FoodsService,
+  constructor(private service: FoodsService,
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
     private location: Location,
@@ -26,17 +26,16 @@ export class FoodsFormComponent implements OnInit {
   ngOnInit(): void {
     const food: Food = this.route.snapshot.data['food'];
     this.form = this.formBuilder.group({
-      _id: [food._id],
-      title: [food.title],
-      image: [food.image],
-      price: [food.price]
+      title: [null],
+      image: [null],
+      price: [null]
     });
     console.log(this.form);
     console.log(this.form.value);
   }
 
   onSubmit(){
-    if(this.form.valid){
+    if(this.form){
     this.service.save(this.form.value).subscribe({
       next: (onSucess) => this.onSucess(),
       error: () =>{
@@ -53,12 +52,12 @@ export class FoodsFormComponent implements OnInit {
   }
 
   private onSucess(){
-    this.snackBar.open('Curso salvo com sucesso!', '', { duration: 5000});
+    this.snackBar.open('Food saved successfully!', '', { duration: 5000});
     this.onCancel();
   }
 
   private onError(){
-    this.snackBar.open('Error ao salvar curso.', '', { duration: 5000});
+    this.snackBar.open('Error saving food.', '', { duration: 5000});
   }
 
 }
