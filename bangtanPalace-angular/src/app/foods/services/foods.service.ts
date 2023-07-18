@@ -8,7 +8,7 @@ import { first } from 'rxjs';
 })
 export class FoodsService {
 
-  private readonly API = 'assents/foods.json';
+  private readonly API = 'cardapio';
 
   constructor(private httpClient: HttpClient) {
      /*empty*/

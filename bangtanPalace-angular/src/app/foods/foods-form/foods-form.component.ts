@@ -35,7 +35,7 @@ export class FoodsFormComponent implements OnInit {
   }
 
   onSubmit(){
-    if(this.form){
+  if(this.form){
     this.service.save(this.form.value).subscribe({
       next: (onSucess) => this.onSucess(),
       error: () =>{
@@ -44,7 +44,7 @@ export class FoodsFormComponent implements OnInit {
      });
     } else {
       alert('form invalid')
-    }
+    } 
   }
 
   onCancel(){
