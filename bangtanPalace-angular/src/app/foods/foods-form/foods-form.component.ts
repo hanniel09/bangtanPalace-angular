@@ -19,7 +19,7 @@ export class FoodsFormComponent implements OnInit {
     private formBuilder: FormBuilder,
     private snackBar: MatSnackBar,
     private location: Location,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
    ){
   }
 
@@ -44,7 +44,7 @@ export class FoodsFormComponent implements OnInit {
      });
     } else {
       alert('form invalid')
-    } 
+    }
   }
 
   onCancel(){

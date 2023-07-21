@@ -13,7 +13,18 @@
 
       <mat-form-field class="full-width">
         <mat-label>Image</mat-label>
-        <input matInput formControlName="image" #image>
+        <input matInput formControlName="image" #image placeholder="New image">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>upload</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <label for="fileInput" class="custom-file-upload" title="Clique aqui para escolher um arquivo">
+            <i class="fas fa-cloud-upload-alt"></i> Escolher arquivo
+          </label>
+          <input type="file" id="fileInput" style="display: none;" accept=".jpg, .jpeg, .png">
+          <label for="input-file-id" class="md-button md-raised md-primary"></label>
+        </mat-menu>
+
       </mat-form-field>
 
       <mat-form-field floatLabel="always" class="price-input">
