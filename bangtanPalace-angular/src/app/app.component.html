@@ -1,7 +1,12 @@
 <mat-toolbar color="primary">
   <span>BangtanPalace</span>
-  <button mat-icon-button class="account-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>account_circle</mat-icon>
-  </button>
+  <div class="badge">
+    <button mat-icon-button matBadge="8"  matBadgeColor="accent">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+    <button mat-icon-button class="account-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </div>
 </mat-toolbar>
 <router-outlet></router-outlet>
