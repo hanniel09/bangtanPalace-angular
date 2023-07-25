@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FoodsComponent } from './foods/foods.component';
 import { FoodsFormComponent } from './foods-form/foods-form.component';
-import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path: '', component: FoodsComponent},
