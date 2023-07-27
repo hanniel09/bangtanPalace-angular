@@ -1,0 +1,26 @@
+mat-card{
+ min-width: 250px;
+ display: flex;
+ justify-content: center;
+}
+mat-card-title{
+  font-size: xx-large;
+}
+.food-image{
+  padding-left: 80px;
+  padding-top: 10px;
+  max-width: 100px;
+  max-height: 100px;
+}
+.header{
+  padding-top: 10px;
+  padding-left: 80px;
+}
+.content{
+  padding-left: 95px;
+  padding-top: 20px;
+}
+.actions{
+  padding-left: 90px;
+  padding-top: 20px;
+}
