@@ -18,10 +18,14 @@ export class AppComponent implements OnInit {
   }
 
   myCart(){
-     this.router.navigate(['myCart'], {relativeTo: this.route})
+     this.router.navigate(['myCart'], { relativeTo: this.route })
   }
 
   auth(){
-    this.router.navigate(['auth'], {relativeTo: this.route})
+    this.router.navigate(['auth'], { relativeTo: this.route })
+  }
+
+  home(){
+    this.router.navigate(['foods'], { relativeTo: this.route })
   }
 }
