@@ -8,6 +8,27 @@
         <mat-label>Username</mat-label>
         <input matInput formControlName="username" #Username>
       </mat-form-field>
+
+      <mat-form-field class="min-width">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" #Password>
+      </mat-form-field>
+
+      <mat-form-field class="min-width">
+        <mat-label>Confirme sua senha</mat-label>
+        <input matInput formControlName="password" #Password>
+      </mat-form-field>
+
+      <div class="account"> Você já tem uma conta?
+        <button mat-button (click)="home()">
+          <span class="login">Fazer Login</span>
+        </button>
+      </div>
     </form>
   </mat-card-content>
+  <mat-card-footer class="footer">
+    <button class="confirm" mat-flat-button color="primary">
+      Confirmar
+    </button>
+  </mat-card-footer>
 </mat-card>
