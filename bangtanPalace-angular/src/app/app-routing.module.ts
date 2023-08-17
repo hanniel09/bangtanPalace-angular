@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './foods/cart/cart.component';
-import { AuthComponent } from './foods/auth/auth.component';
+import { AuthRegisterComponent } from './foods/auth/auth-register/auth-register.component';
 
 
 const routes: Routes = [
@@ -10,7 +10,7 @@ const routes: Routes = [
   path: 'foods',
   loadChildren: () => import('./foods/foods.module').then(m => m.FoodsModule) },
  { path: 'myCart', component: CartComponent },
- { path: 'auth', component: AuthComponent }
+ { path: 'auth', component: AuthRegisterComponent}
 ];
 
 @NgModule({
